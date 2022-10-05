@@ -13,3 +13,8 @@
 ## Check for forbidden licenses on the full Kubernetes cluster
 
 - `make check`
+
+## References
+
+- [List all running container images](https://kubernetes.io/docs/tasks/access-application-cluster/list-all-running-container-images/)
+- [trivy CLI docs](https://aquasecurity.github.io/trivy/v0.32/docs/)

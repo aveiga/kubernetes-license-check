@@ -4,7 +4,7 @@ while read line
 do
     echo "--------------------------"
     echo "Checking licenses for $line"
-    if trivy image -q --security-checks license --license-full $line | grep forbidden
+    if trivy image -q --security-checks license --config trivy.yaml --license-full $line | grep forbidden
     then
         echo "Found forbidden License on image $line"
         exit 1
